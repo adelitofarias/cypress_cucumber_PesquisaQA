@@ -3,5 +3,7 @@
   "viewportHeight": 1080,
   "baseUrl": "http://www.lourencodemonaco.com.br/vvtest/",
   "testFiles": "**/*.{feature,features}",
-  "video": false
+  "video": false,
+  "projectId": "3c79oe"
+
 }
