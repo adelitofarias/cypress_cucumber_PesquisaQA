@@ -11,7 +11,7 @@ A IDE escolhida foi o [VS Code][vs].
 Instale no Mac, Linux ou Windows seguindo as instruções da documentação do [Cypress.io][cyDOC] e do [cypress-cucumber-preprocessor][cucumber]:
 
 
-## Exemplo de uso
+## Como executar o projeto
 
 Com todos as dependências instaladas, clone o projeto e execute esse comando:
 
@@ -20,6 +20,53 @@ npm run cy:runTest
 ```
 
 Pronto, o projeto será executado em sua máquina.
+
+
+
+
+### ⚙️ Arquitetura do projeto
+-----------------------
+
+```
+  │        ├── fixtures/
+  │        │   ├── *.json
+  │        │   ├── *.csv       
+  │        │   └── *.png
+  │        │
+  │        ├── integration/
+  │        │   ├── <Features>/
+  │        │   │   └── <categoria>.feature
+  │        │
+  │        ├── plugins/
+  │        │   └── index.js
+  │        │
+  │        ├── support/
+  │        │   ├── locators
+  │        │       └── <categoria>Locator.js
+  │        │   ├── pageobjects
+  │        │       └── <categoria>Pages.js
+  │        │   ├── steps
+  │        │       └── <categoria>.spec.js
+  │        │   └── commands.js
+  │        │   └── index.js
+  │        │  
+  │ 
+  ├── cypress.json
+  ├── package.json
+  └── README.md
+```
+---------------------------------------
+## 🔍 Camadas da arquitetura
+
+ - **fixtures:** arquivos para massa de dados estática para os testes (csv, png, xlsx, txt);
+ - **integration:** arquivos contendo as definições de BDD em extensão *.feature;
+ - **plugins:** plugins que são utilizados na solução ficam dentro do arquivo "plugins/index.js";
+ - **support:** camadas com as divisões modulares para auxiliar na legibilidade dos cenários:
+    - locators contém todos os mapeamentos para reconhecimento dos componentes do front;
+    - pageobjects contém a modularização de todas as funções que serão adotadas para efetivar a validação;
+    - steps contém a conexão entre a definição do BDD na *.feature e as chamdas para efetivação da validação com os *Pages.js;
+ - **cypress.json:** arquivo de configuração do Cypress;
+ - **package.json:** documento que comporta as configurações necessárias para execução do projeto;
 
 Grato pela visita! =D
 
