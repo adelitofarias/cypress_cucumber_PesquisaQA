@@ -18,6 +18,8 @@
 -----------------------
 
 ```
+  ├─  cypress/
+  │        │
   │        ├── fixtures/
   │        │   ├── *.json
   │        │   ├── *.csv       
@@ -39,7 +41,6 @@
   │        │       └── <categoria>.spec.js
   │        │   └── commands.js
   │        │   └── index.js
-  │        │  
   │ 
   ├── cypress.json
   ├── package.json
