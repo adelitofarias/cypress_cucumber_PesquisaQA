@@ -2,27 +2,17 @@
 > Esse é um exemplo de como montar uma estrutura inicial de testes automáticos web com o auxílio do [Cypress.io][cy] e do [cypress-cucumber-preprocessor][cucumber] que dá suporte para a escrita dos cenários com as regras gramaticais do Gherkin.
 > 
 
-
-
-## Instalação
-
-A IDE escolhida foi o [VS Code][vs].
-
-Instale no Mac, Linux ou Windows seguindo as instruções da documentação do [Cypress.io][cyDOC] e do [cypress-cucumber-preprocessor][cucumber]:
-
-
-## Como executar o projeto
-
-Com todos as dependências instaladas, clone o projeto e execute esse comando:
-
-```sh
-npm run cy:runTest
-```
-
-Pronto, o projeto será executado em sua máquina.
-
-
-
+### ✨ Instalação e uso da arquitetura
+-----------------------
+- A IDE escolhida foi o [VS Code][vs];
+- Instale o [Node.js](https://nodejs.org/en/download/);
+- Seguindo as instruções da documentação do [Cypress.io][cyDOC] e do [cypress-cucumber-preprocessor][cucumber] os instale;
+- Baixe este repositório ou faça um git clone;
+- Abra o diretório do projeto e execute o comando:
+    - `npm install`
+- Para acionar os testes, execute no diretório do projeto:
+    - `npm run cy:runTest`
+- Pronto, o projeto será executado em sua máquina.
 
 ### ⚙️ Arquitetura do projeto
 -----------------------
